@@ -1,0 +1,56 @@
+span.tooltip {
+    cursor: help;
+        /* Will either add a pointer with a question mark or just a question mark */
+    position: relative;
+        /* Relative to the span elements */
+}
+
+.tooltip::before, 
+.tooltip::after {
+    position: absolute;
+    left: 50%;
+    display: block;
+    opacity: 0;
+    z-index: -999;
+        /* This ensures that the tooltips are not visible without user interaction */
+}
+
+.tooltip:hover::before,
+.tooltip:focus::before,
+.tooltip:hover::after,
+.tooltip:focus::after {
+    /* Select bother hover and focus to accomodate users without a keyboard */
+    opacity: 1;
+    z-index: 999;
+}
+
+
+/* --- Creates a triangle shape with borders ---*/
+.tooltip::before {
+    content: "";
+    border-style: solid;
+    border-width: 1em 0.75em 0 0.75em;
+        /* Creates a triangle with the point facing down */
+        /* The thinner the left and right borders the sharper the triangle */
+    border-color: rgb(18, 88, 110) transparent transparent transparent;
+    bottom: 100%;
+        /* Bump it up above the span element */
+    margin-left: -0.5em;
+        /* Center the arrow, given that it has been moved left 50% */
+}
+
+.tooltip:after {
+    content: attr(data-tip);
+        /* This is where the magic happens. See for more details: 
+            http://tympanus.net/codrops/css_reference/attr/ */
+    background-color: rgb(18, 88, 110);
+    border-radius: 0.25em;
+    bottom: 170%;
+    width: 13.5em;
+    padding: 1em 0.5em;
+    margin-left: -6.75em;
+        /* margin-left is negative and half the width to center the bubble */
+    color: white;
+    text-align: center;
+    font-size: 0.75em;
+}

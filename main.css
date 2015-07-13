@@ -1,3 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 300;
+    min-height: 90vh;
+    background-color: rgb(5, 31, 29);
+    color: rgb(185, 244, 198);
+}
+body * {
+    padding: 0 10px;
+}
+
 h1 {
-    color: red;
+    margin: 0;
+    padding-top: 2em;
+    text-transform: uppercase;
+    font-size: 2.2em;
+}
+h1::after {
+    content: "";
+    display: block;
+    margin: 10px auto;
+    width: 7em;
+    height: 0.1em;
+    background-color:rgb(185, 244, 198);
+}
+
+h2 {
+    font-weight: 100;
+    margin-top: 2em;
+}
+h2::after {
+    content: "";
+    display: block;
+    margin: 1em auto 2em;
+    width: 100%;
+    height: 1px;
+    background-color:rgb(249, 90, 90);
+}
+
+p {
+    width: 65%;
+    display: block;
+    margin: 1em auto;
+    font-family: monospace;
+    font-size: 1.4em;
+    text-align: left;
+    color: white;
+}
+span {
+    color: rgb(249, 90, 90);
+    font-size: 1.3em;
+}
+
+.explain > p {
+    color: rgb(185, 244, 198);
+    font-family: sans-serif;
+    width: 90%;
+    text-align: justify;
+    font-size:1.2em;
+}
+p:first-child {
+    padding-top: 2em;
+    margin-top: 2em;
+    border-top: solid 1px rgb(249, 90, 90);
+}
+.explain > p > span {
+    font-family: monospace;
+    font-size: 1em;
+    color: rgb(220,220,220);
+    background-color: rgb(100,100,100);
+    padding: 3px;
 }
