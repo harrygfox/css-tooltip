@@ -8,36 +8,37 @@
     <link rel="stylesheet" href="tooltip.css">
 </head>
 <body>
-    
-    <h1>Tooltips with Pure CSS</h1>
-    <h2>Below is some text with tooltips attached to spans. Simply hover over the spans to see the tooltips.</h2>
-    
     <div class="wrap">
-        <p>No 
-            <span   class="tooltip" 
-                    tabindex="1" 
-                    data-tip="Such as Sass or Less">
-            stylesheet languages</span> were used in this project.
-        </p>
-        <p>Just plain old HTML and CSS. This code is 
-            <span   class="tooltip" 
-                    tabindex="2" 
-                    data-tip="Available on GitHub! at /harrygfox/css-tooltip">
-            open source</span> - so feel free to rip it off to your heart's content.
-        </p>
-    </div>
+        <h1>Tooltips with Pure CSS</h1>
+        <h2>Hover over / Tab to the spans to see the tooltips.</h2>
+        
+        <div class="example">
+            <p>No 
+                <span   class="tooltip" 
+                        tabindex="1" 
+                        data-tip="Such as Sass or Less">
+                stylesheet languages</span> were used in this project.
+            </p>
+            <p>Just plain old HTML and CSS. This code is 
+                <span   class="tooltip" 
+                        tabindex="2" 
+                        data-tip="Available on GitHub! at /harrygfox/css-tooltip">
+                open source</span> - so feel free to rip it off to your heart's content.
+            </p>
+        </div>
 
-    <div class="github">
-        <a  href="https://github.com/harrygfox/css-tooltip"
-                target="_blank">
-            <h3>View Code on GitHub</h3>
-        </a>
-    </div>
+        <div class="github">
+            <a  href="https://github.com/harrygfox/css-tooltip"
+                    target="_blank">
+                <h3>View Code on GitHub</h3>
+            </a>
+        </div>
 
-    <div class="explain">
-        <p>Each span has a custom data attribute. Here it is <span>data-tip</span>. The value of this data attribute is the message of the tooltip using the CSS function <span>attr()</span></p>
-        <p>Each span also has an attribute of <span>tabindex</span> with values incrementing from 1. This allows users without a mouse to view the messages behind the tooltips.</p>
-        <p>See <span>tooltip.css</span> for a more detailed breakdown</p>
+        <div class="explain">
+            <p>Each span has a custom data attribute. Here it is <span>data-tip</span>. The value of this data attribute is the message of the tooltip using the CSS function <span>attr()</span>.</p>
+            <p>Each span also has an attribute of <span>tabindex</span> with values incrementing from 1. This allows users without a mouse to view the messages behind the tooltips.</p>
+            <p>See <span>tooltip.css</span> for a more detailed breakdown.</p>
+        </div>
     </div>
 </body>
 </html>
