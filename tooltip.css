@@ -25,7 +25,8 @@ span.tooltip {
 }
 
 
-/* --- Creates a triangle shape with borders ---*/
+/* --- Creates a triangle shape with borders ---
+        https://css-tricks.com/animation-css-triangles-work/ */
 .tooltip::before {
     content: "";
     border-style: solid;
