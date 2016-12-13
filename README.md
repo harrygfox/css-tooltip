@@ -1,6 +1,6 @@
 # Pure CSS Tooltips
 
-[demo](http://harryfox.me/css-tooltip)
+[demo](http://harrygfox.github.io/css-tooltip)
 
 `tooltip.css` contains all of the styles that create the tooltips. 
 
